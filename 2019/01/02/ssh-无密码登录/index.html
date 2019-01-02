@@ -5,15 +5,20 @@
   
 
   
-  <title>Archives: 2018 | Kun Li&#39;s blog</title>
+  <title>ssh-无密码登录 | Kun Li&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Kun Li&#39;s blog">
-<meta property="og:url" content="https://kunli-cs.github.io/archives/2018/index.html">
+  <meta name="description" content="ssh 无密码登录配置Step1: 在主机A生成ssh秘钥和公钥123ssh-keygen -t rsa#默认的RSA加密长度为2048，也可以指定为4096位长度ssh-keygen -b 4096 -t rsa Step2:将主机A的公钥上传到主机B1ssh-copy-id username@server-B 当再次用ssh从主机A登录到主机B的时候就不需要输密码了。">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ssh-无密码登录">
+<meta property="og:url" content="https://kunli-cs.github.io/2019/01/02/ssh-无密码登录/index.html">
 <meta property="og:site_name" content="Kun Li&#39;s blog">
+<meta property="og:description" content="ssh 无密码登录配置Step1: 在主机A生成ssh秘钥和公钥123ssh-keygen -t rsa#默认的RSA加密长度为2048，也可以指定为4096位长度ssh-keygen -b 4096 -t rsa Step2:将主机A的公钥上传到主机B1ssh-copy-id username@server-B 当再次用ssh从主机A登录到主机B的时候就不需要输密码了。">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-01-02T13:34:08.777Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kun Li&#39;s blog">
+<meta name="twitter:title" content="ssh-无密码登录">
+<meta name="twitter:description" content="ssh 无密码登录配置Step1: 在主机A生成ssh秘钥和公钥123ssh-keygen -t rsa#默认的RSA加密长度为2048，也可以指定为4096位长度ssh-keygen -b 4096 -t rsa Step2:将主机A的公钥上传到主机B1ssh-copy-id username@server-B 当再次用ssh从主机A登录到主机B的时候就不需要输密码了。">
   
     <link rel="alternate" href="/atom.xml" title="Kun Li&#39;s blog" type="application/atom+xml">
   
@@ -60,40 +65,56 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/12/31/Awesome-Crowd-Counting/" class="archive-article-date">
-  <time datetime="2018-12-31T08:53:10.000Z" itemprop="datePublished">Dec 31</time>
+        <section id="main"><article id="post-ssh-无密码登录" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/02/ssh-无密码登录/" class="article-date">
+  <time datetime="2019-01-02T13:29:02.000Z" itemprop="datePublished">2019-01-02</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/12/31/Awesome-Crowd-Counting/">Awesome-Crowd-Counting</a>
+    <h1 class="article-title" itemprop="name">
+      ssh-无密码登录
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="ssh-无密码登录配置"><a href="#ssh-无密码登录配置" class="headerlink" title="ssh 无密码登录配置"></a>ssh 无密码登录配置</h4><h5 id="Step1-在主机A生成ssh秘钥和公钥"><a href="#Step1-在主机A生成ssh秘钥和公钥" class="headerlink" title="Step1: 在主机A生成ssh秘钥和公钥"></a>Step1: 在主机A生成ssh秘钥和公钥</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br><span class="line"><span class="comment">#默认的RSA加密长度为2048，也可以指定为4096位长度</span></span><br><span class="line">ssh-keygen -b 4096 -t rsa</span><br></pre></td></tr></table></figure>
+<h5 id="Step2-将主机A的公钥上传到主机B"><a href="#Step2-将主机A的公钥上传到主机B" class="headerlink" title="Step2:将主机A的公钥上传到主机B"></a>Step2:将主机A的公钥上传到主机B</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id username@server-B</span><br></pre></td></tr></table></figure>
+<p>当再次用ssh从主机A登录到主机B的时候就不需要输密码了。</p>
 
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kunli-cs.github.io/2019/01/02/ssh-无密码登录/" data-id="cjqf83kig0004kc2b7wkhascb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/01/01/Anaconda-commands/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Anaconda-commands</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         

@@ -62,6 +62,47 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-ssh-无密码登录" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/02/ssh-无密码登录/" class="article-date">
+  <time datetime="2019-01-02T13:29:02.000Z" itemprop="datePublished">2019-01-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/02/ssh-无密码登录/">ssh-无密码登录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="ssh-无密码登录配置"><a href="#ssh-无密码登录配置" class="headerlink" title="ssh 无密码登录配置"></a>ssh 无密码登录配置</h4><h5 id="Step1-在主机A生成ssh秘钥和公钥"><a href="#Step1-在主机A生成ssh秘钥和公钥" class="headerlink" title="Step1: 在主机A生成ssh秘钥和公钥"></a>Step1: 在主机A生成ssh秘钥和公钥</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa</span><br><span class="line"><span class="comment">#默认的RSA加密长度为2048，也可以指定为4096位长度</span></span><br><span class="line">ssh-keygen -b 4096 -t rsa</span><br></pre></td></tr></table></figure>
+<h5 id="Step2-将主机A的公钥上传到主机B"><a href="#Step2-将主机A的公钥上传到主机B" class="headerlink" title="Step2:将主机A的公钥上传到主机B"></a>Step2:将主机A的公钥上传到主机B</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-copy-id username@server-B</span><br></pre></td></tr></table></figure>
+<p>当再次用ssh从主机A登录到主机B的时候就不需要输密码了。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://kunli-cs.github.io/2019/01/02/ssh-无密码登录/" data-id="cjqf83kig0004kc2b7wkhascb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-Anaconda-commands" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/01/01/Anaconda-commands/" class="article-date">
@@ -90,7 +131,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kunli-cs.github.io/2019/01/01/Anaconda-commands/" data-id="cjqdq429v0000pf2bedz5lzr6" class="article-share-link">Share</a>
+      <a data-url="https://kunli-cs.github.io/2019/01/01/Anaconda-commands/" data-id="cjqf83ki80000kc2br1cqf4hp" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/code/">code</a></li></ul>
@@ -129,7 +170,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kunli-cs.github.io/2019/01/01/Awesome-Semantic-Segmentation/" data-id="cjqdq42a10003pf2borbbdj00" class="article-share-link">Share</a>
+      <a data-url="https://kunli-cs.github.io/2019/01/01/Awesome-Semantic-Segmentation/" data-id="cjqf83kif0003kc2b5vtdy6q5" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/code/">code</a></li></ul>
@@ -168,7 +209,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://kunli-cs.github.io/2018/12/31/Awesome-Crowd-Counting/" data-id="cjqdq429z0001pf2bzb9nlyox" class="article-share-link">Share</a>
+      <a data-url="https://kunli-cs.github.io/2018/12/31/Awesome-Crowd-Counting/" data-id="cjqf83kic0001kc2but3u19he" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/code/">code</a></li></ul>
@@ -193,7 +234,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/">code</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/code/">code</a></li></ul>
     </div>
   </div>
 
@@ -203,7 +244,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/code/" style="font-size: 10px;">code</a>
+      <a href="/tags/Linux/" style="font-size: 10px;">Linux</a> <a href="/tags/code/" style="font-size: 20px;">code</a>
     </div>
   </div>
 
@@ -223,6 +264,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/01/02/ssh-无密码登录/">ssh-无密码登录</a>
+          </li>
         
           <li>
             <a href="/2019/01/01/Anaconda-commands/">Anaconda-commands</a>
